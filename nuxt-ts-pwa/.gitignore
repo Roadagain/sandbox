@@ -1,5 +1,5 @@
-# Created by .ignore support plugin (hsz.mobi)
-### Node template
+### https://raw.github.com/github/gitignore/d2c1bb2b9c72ead618c9f6a48280ebc7a8e0dff6/Node.gitignore
+
 # Logs
 logs
 *.log
@@ -22,7 +22,7 @@ coverage
 # nyc test coverage
 .nyc_output
 
-# Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
+# Grunt intermediate storage (https://gruntjs.com/creating-plugins#storing-task-files)
 .grunt
 
 # Bower dependency directory (https://bower.io/)
@@ -58,6 +58,7 @@ typings/
 
 # dotenv environment variables file
 .env
+.env.test
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache
@@ -68,17 +69,16 @@ typings/
 # nuxt.js build output
 .nuxt
 
-# Nuxt generate
-dist
-
 # vuepress build output
 .vuepress/dist
 
 # Serverless directories
-.serverless
+.serverless/
 
-# IDE
-.idea
+# FuseBox cache
+.fusebox/
 
-# Service worker
-sw.*
+# DynamoDB Local files
+.dynamodb/
+
+
