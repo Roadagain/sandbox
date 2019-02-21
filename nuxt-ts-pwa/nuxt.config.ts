@@ -1,3 +1,4 @@
 export default {
-  plugins: ['~/plugins/hello']
+  plugins: ['~/plugins/hello'],
+  modules: ['@nuxtjs/pwa']
 }

@@ -81,4 +81,5 @@ typings/
 # DynamoDB Local files
 .dynamodb/
 
-
+# @nuxtjs/pwa service worker output
+sw.*
