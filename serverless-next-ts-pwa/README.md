@@ -76,3 +76,6 @@ If you're having issues, feel free to tag @sampsonjoliver in the [issue you crea
   to be deployed on Node 8 rather than Node 6
   ([Firebase Blog Announcement](https://firebase.googleblog.com/2018/08/cloud-functions-for-firebase-config-node-8-timeout-memory-region.html))
   . This is matched in by specifying target as `es2017` in [`src/functions/tsconfig.json`](src/functions/tsconfig) so that typescript output somewhat compacter and moderner code.
+
+## 注意
+`next-manifest` のdistを書き換えないとmanifestが `./static` にできるので注意
