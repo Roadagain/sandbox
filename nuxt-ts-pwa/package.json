@@ -9,6 +9,7 @@
   },
   "scripts": {
     "dev": "nuxt-ts",
+    "authed-dev": "BASIC_AUTH_ENABLED=true nuxt-ts",
     "build": "nuxt-ts build",
     "start": "nuxt-ts start",
     "generate": "nuxt-ts generate",
