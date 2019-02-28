@@ -1,0 +1,32 @@
+{
+  "name": "serverless-nuxt",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Roadagain",
+  "license": "MIT",
+  "engines": {
+    "node": "8"
+  },
+  "scripts": {
+    "dev": "nuxt-ts src/app",
+    "build-app": "nuxt-ts build src/app",
+    "build-functions": "tsc --project src/functions",
+    "build-public": "cp -R src/public dist/public",
+    "copy-deps": "cp *{package.json,yarn.lock} dist/functions",
+    "install-deps": "cd dist/functions && yarn",
+    "preserve": "yarn build-functions && yarn build-app && yarn build-public && yarn copy-deps && yarn install-deps",
+    "serve": "firebase serve",
+    "deploy": "firebase deploy"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "firebase-admin": "^7.0.0",
+    "firebase-functions": "^2.2.0",
+    "nuxt": "^2.4.5",
+    "nuxt-ts": "^2.4.5"
+  },
+  "devDependencies": {
+    "firebase-tools": "^6.4.0",
+    "typescript": "^3.3.3333"
+  }
+}
