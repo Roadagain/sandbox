@@ -5,7 +5,7 @@ const { Nuxt } = require('nuxt')
 const app = express()
 const nuxt = new Nuxt({
   dev: false,
-  buildDir: '/nuxt',
+  buildDir: 'nuxt',
   build: {
     publicPath: '/assets'
   }
