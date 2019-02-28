@@ -12,11 +12,10 @@
     "build-app": "nuxt-ts build src/app",
     "build-functions": "tsc --project src/functions",
     "build-public": "cp -R src/public dist/public",
-    "copy-app": "cp -R dist/functions/nuxt dist/public/assets",
     "copy-deps": "cp *{package.json,yarn.lock} dist/functions",
     "install-deps": "cd dist/functions && yarn",
-    "preserve": "yarn build-functions && yarn build-app && yarn build-public && yarn copy-app && yarn copy-deps && yarn install-deps",
-    "serve": "firebase serve --only hosting,functions",
+    "preserve": "yarn build-functions && yarn build-app && yarn build-public && yarn copy-deps && yarn install-deps",
+    "serve": "firebase serve",
     "deploy": "firebase deploy"
   },
   "dependencies": {
