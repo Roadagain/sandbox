@@ -1,0 +1,21 @@
+{
+  "hosting": {
+    "public": "dist/public",
+    "rewrites": [
+      {
+        "source": "**",
+        "function": "nuxtApp"
+      }
+    ],
+    "predeploy": "yarn build-public"
+  },
+  "functions": {
+    "source": "dist/functions",
+    "predeploy": [
+      "yarn build-functions",
+      "yarn build-app",
+      "yarn copy-deps",
+      "yarn install-deps"
+    ]
+  }
+}
