@@ -3,5 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "Roadagain",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "dev": "nuxt-ts src/app",
+    "build-app": "nuxt-ts build src/app"
+  },
+  "dependencies": {
+    "nuxt-ts": "^2.4.5"
+  }
 }
