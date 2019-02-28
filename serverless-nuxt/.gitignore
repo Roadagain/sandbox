@@ -78,4 +78,5 @@ dist/
 # FuseBox cache
 .fusebox/
 
-
+# Firebase directories
+.firebase
