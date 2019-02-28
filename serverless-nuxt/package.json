@@ -1,0 +1,7 @@
+{
+  "name": "serverless-nuxt",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Roadagain",
+  "license": "MIT"
+}
