@@ -4,6 +4,9 @@
   "main": "index.js",
   "author": "Roadagain",
   "license": "MIT",
+  "engines": {
+    "node": "8"
+  },
   "scripts": {
     "dev": "nuxt-ts src/app",
     "build-app": "nuxt-ts build src/app"
