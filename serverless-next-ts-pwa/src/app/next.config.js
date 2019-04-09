@@ -1,13 +1,13 @@
 const withTypescript = require('@zeit/next-typescript')
-const withManifest = require('next-manifest')
 const withOffline = require('next-offline')
-module.exports = withOffline(withManifest(withTypescript({
+const path = require('path')
+
+const registerSwPrefix = '/_next/static'
+module.exports = withOffline(withTypescript({
     distDir: '../../dist/functions/next',
-    manifest: {
-        name: 'PWA Next.js with TypeScript on Firebase',
-        short_name: 'pwa.next.ts'
-    },
+    registerSwPrefix,
+    scope: path.join(registerSwPrefix, '/'),
     workboxOpts: {
         swDest: 'static/service-worker.js'
     }
-})))
+}))
