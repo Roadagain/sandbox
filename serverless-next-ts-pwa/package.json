@@ -7,6 +7,7 @@
   },
   "scripts": {
     "dev": "next src/app",
+    "start": "next start src/app",
     "preserve": "yarn build-public && yarn build-functions && yarn build-app && yarn copy-deps && yarn install-deps",
     "serve": "cross-env NODE_ENV=production firebase serve",
     "deploy": "firebase deploy",
