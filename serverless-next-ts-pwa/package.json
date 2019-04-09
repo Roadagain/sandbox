@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "next src/app",
     "preserve": "yarn build-public && yarn build-functions && yarn build-app && yarn copy-deps && yarn install-deps",
-    "serve": "cross-env NODE_ENV=production firebase serve --only hosting",
+    "serve": "cross-env NODE_ENV=production firebase serve",
     "deploy": "firebase deploy",
     "clean": "rimraf \"dist/functions\" && rimraf \"dist/public\"",
     "build-app": "next build \"src/app\"",
