@@ -4,7 +4,7 @@
   "dependencies": {
     "@nuxtjs/pwa": "^3.0.0-beta.8",
     "nuxt-basic-auth-module": "^1.1.0",
-    "nuxt-ts": "latest",
+    "nuxt-ts": "^2.8.1",
     "vue-property-decorator": "^7.3.0"
   },
   "scripts": {
